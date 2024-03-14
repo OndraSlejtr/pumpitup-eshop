@@ -28,12 +28,8 @@ class EshopTest {
         ItemConfigurationAttribute sizeAttribute = new ItemConfigurationAttribute("size");
         ItemConfigurationAttributeValue lSize = new ItemConfigurationAttributeValue("L", sizeAttribute);
 
-        ItemConfigurationAttribute materialAttribute = new ItemConfigurationAttribute("material");
-        ItemConfigurationAttributeValue woolMaterial = new ItemConfigurationAttributeValue("wool", materialAttribute);
-
         tshirt.addConfigurationOption(colorAttribute);
         tshirt.addConfigurationOption(sizeAttribute);
-        tshirt.addConfigurationOption(materialAttribute);
 
         Item blackLtshirt = new Item(tshirt);
         blackLtshirt.addConfiguration(blackColor);
